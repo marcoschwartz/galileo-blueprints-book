@@ -1,0 +1,24 @@
+html
+  head
+    title Weather Station Interface
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='/js/interface.js')
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css")
+  body
+    .container
+      h1 Home Automation Interface
+      h3.row
+        .col-md-4
+          div Sensor reading
+        .col-md-4
+          div#temperature Temperature:
+        .col-md-4
+          div#humidity Humidity:
+      h3.row
+        .col-md-4
+          div LED control
+        .col-md-4
+          button.btn.btn-lg.btn-block.btn-primary#on On
+        .col-md-4
+          button.btn.btn-lg.btn-block.btn-danger#off Off
+    

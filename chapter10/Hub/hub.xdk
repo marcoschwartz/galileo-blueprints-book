@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.iotapp",
       "src": "https://edge-intel.s3.amazonaws.com/iotapp/production/release-2014-ww45/iotapp-local-temperature/sample.zip",
       "projectGuid": "b866627e-e256-43ff-9aaa-b9991453c125",
-      "lastModifiedDate": 1425632602921,
+      "lastModifiedDate": 1424937543223,
       "creationDate": 1418630259412
     },
     "sourceDirectory": "",

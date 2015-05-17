@@ -16,7 +16,9 @@ app.use(express.static(__dirname + '/public'));
 
 // Sensor pins
 var light_sensor_pin = new mraa.Aio(0);
+light_sensor_pin.setBit(12);
 var temp_sensor_pin = new mraa.Aio(1);
+temp_sensor_pin.setBit(12);
 
 // Forecast object
 var options = {

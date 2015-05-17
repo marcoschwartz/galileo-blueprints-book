@@ -7,6 +7,7 @@ var port = 3000;
 
 // View engine
 app.set('view engine', 'jade');
+app.set('views', __dirname + '/views');
 
 // Set public folder
 app.use(express.static(__dirname + '/public'));
@@ -16,9 +17,12 @@ app.get('/', function(req, res){
   res.render('interface');
 });
 
-// Node-aREST
+// Rest
 var rest = require("arest")(app);
-rest.addDevice('http','192.168.1.103');
+
+// Add devices
+rest.addDevice('http','192.168.1.105');
+rest.addDevice('http','192.168.1.106');
 
 // Start server
 app.listen(port);
